@@ -138,3 +138,10 @@ C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcorea
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Pages\Teams\Details.cshtml.g.cs
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Pages\Teams\Edit.cshtml.g.cs
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Pages\Teams\Index.cshtml.g.cs
+C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\EnableAuthenticator.cshtml.g.cs
+C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_ManageNav.cshtml.g.cs
+C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewImports.cshtml.g.cs
+C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\Account\_ViewImports.cshtml.g.cs
+C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
+C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Pages\Shared\_CookieConsentPartial.cshtml.g.cs
