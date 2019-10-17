@@ -13,7 +13,6 @@ C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcorea
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Pages\Error.cshtml.g.cs
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Pages\Index.cshtml.g.cs
-C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Pages\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -131,8 +130,6 @@ C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\bin\Debug\netcorea
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\bin\Debug\netcoreapp3.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\bin\Debug\netcoreapp3.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\bin\Debug\netcoreapp3.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\ScrimOrganizerV2.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\ScrimOrganizerV2.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Pages\Teams\Create.cshtml.g.cs
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Pages\Teams\Delete.cshtml.g.cs
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Pages\Teams\Details.cshtml.g.cs
@@ -145,3 +142,6 @@ C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcorea
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Areas\Identity\Pages\_ViewImports.cshtml.g.cs
 C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\Razor\Pages\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\bin\Debug\netcoreapp3.0\SendGrid.dll
+C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\ScrimOrganizerV2.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Rasmu\source\repos\ScrimOrganizerV2\ScrimOrganizerV2\obj\Debug\netcoreapp3.0\ScrimOrganizerV2.MvcApplicationPartsAssemblyInfo.cache
