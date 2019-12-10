@@ -10,5 +10,6 @@ namespace ScrimOrganizerV2.Models
         public int Id { get; set; }
         public int Team1ID { get; set; }        
         public int Team2ID { get; set; }        
+        public DateTime BookedDate { get; set; }
     }
 }

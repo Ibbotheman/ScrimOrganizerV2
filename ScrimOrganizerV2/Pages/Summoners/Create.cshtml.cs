@@ -71,7 +71,7 @@ namespace ScrimOrganizerV2.Pages.Summoners
                 await _context.SaveChangesAsync();
                 
 
-                return RedirectToPage("./Index");
+                return RedirectToPage("/Teams/Index");
             }
             else
             {
