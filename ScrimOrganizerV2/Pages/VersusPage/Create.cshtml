@@ -14,13 +14,19 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="VersusTeam.Team1ID" class="control-label"></label>
-                <input asp-for="VersusTeam.Team1ID" class="form-control" />
+                <label asp-for="VersusTeam.Team1ID" class="control-label">Your team</label>
+                @*<input asp-for="VersusTeam.Team1ID" class="form-control" />*@
+                <select asp-for="VersusTeam.Team1ID" asp-items="Model.Options" class="form-control">
+                    <option>Choose your own team</option>
+                </select>
                 <span asp-validation-for="VersusTeam.Team1ID" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="VersusTeam.Team2ID" class="control-label"></label>
-                <input asp-for="VersusTeam.Team2ID" class="form-control" />
+                <label asp-for="VersusTeam.Team2ID" class="control-label">Enemy Team</label>
+                @*<input asp-for="VersusTeam.Team2ID" class="form-control" />*@
+                <select asp-for="VersusTeam.Team2ID" asp-items="Model.Options" class="form-control">
+                    <option>Choose your enemies</option>
+                </select>
                 <span asp-validation-for="VersusTeam.Team2ID" class="text-danger"></span>
             </div>
             <div class="form-group">

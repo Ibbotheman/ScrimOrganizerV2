@@ -25,6 +25,7 @@ namespace ScrimOrganizerV2.Pages.VersusPage
 
         public async Task<IActionResult> OnGetAsync(int? id)
         {
+
             if (id == null)
             {
                 return NotFound();

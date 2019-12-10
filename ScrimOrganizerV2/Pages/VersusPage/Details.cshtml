@@ -12,17 +12,36 @@
     <hr />
     <dl class="row">
         <dt class="col-sm-2">
-            @Html.DisplayNameFor(model => model.VersusTeam.Team1ID)
+            @Html.DisplayNameFor(model => model.VersusTeam.)
         </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.VersusTeam.Team1ID)
+        <dd>
+            @foreach (var summoner in Model.ShowStatsSummoner)
+            {
+                <div class="SummonerNames">
+                    @Html.DisplayName(summoner.summonerName)
+                    <br />
+                    <div class="SummonerStats">
+                        @Html.DisplayName(summoner.tier)
+                        @Html.DisplayName(summoner.rank)
+                    </div>
+                </div>
+            }
+
         </dd>
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.VersusTeam.Team2ID)
         </dt>
-        <dd class="col-sm-10">
-            @Html.DisplayFor(model => model.VersusTeam.Team2ID)
-        </dd>
+        @foreach (var summoner in Model.ShowStatsSummoner2)
+        {
+            <div class="SummonerNames">
+                @Html.DisplayName(summoner.summonerName)
+                <br />
+                <div class="SummonerStats">
+                    @Html.DisplayName(summoner.tier)
+                    @Html.DisplayName(summoner.rank)
+                </div>
+            </div>
+        }
     </dl>
 </div>
 <div>

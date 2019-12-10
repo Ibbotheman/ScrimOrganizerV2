@@ -14,42 +14,43 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.VersusTeam[0].Team1ID)
+                <p>Blue side</p>
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.VersusTeam[0].Team2ID)
+                <p>Red Side</p>
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var versusTeam in Model.VersusTeam) {
-        <tr>
-            <td>
-                @foreach (var team in Model.Teams)
-                {
-                    if (versusTeam.Team1ID == team.ID)
+        @foreach (var versusTeam in Model.VersusTeam)
+        {
+            <tr>
+                <td>
+                    @foreach (var team in Model.Teams)
                     {
-                        @Html.DisplayFor(modelItem => team.Name)
+                        if (versusTeam.Team1ID == team.ID)
+                        {
+                            @Html.DisplayFor(modelItem => team.Name)
+                        }
                     }
-                }
-                
-            </td>
-            <td>
-                @foreach (var team in Model.Teams)
-                {
-                    if (versusTeam.Team2ID == team.ID)
+
+                </td>
+                <td>
+                    @foreach (var team in Model.Teams)
                     {
-                        @Html.DisplayFor(modelItem => team.Name)
+                        if (versusTeam.Team2ID == team.ID)
+                        {
+                            @Html.DisplayFor(modelItem => team.Name)
+                        }
                     }
-                }
-            </td>
-            <td>
-                <a asp-page="./Edit" asp-route-id="@versusTeam.Id">Edit</a> |
-                <a asp-page="./Details" asp-route-id="@versusTeam.Id">Details</a> |
-                <a asp-page="./Delete" asp-route-id="@versusTeam.Id">Delete</a>
-            </td>
-        </tr>
-}
+                </td>
+                <td>
+                    <a asp-page="./Edit" asp-route-id="@versusTeam.Id">Edit</a> |
+                    <a asp-page="./Details" asp-route-id="@versusTeam.Id">Details</a> |
+                    <a asp-page="./Delete" asp-route-id="@versusTeam.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

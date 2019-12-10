@@ -18,10 +18,12 @@ namespace ScrimOrganizerV2.Pages.VersusPage
         {
             _context = context;
         }
+        public SelectList Options { get; set; }
 
-        public IActionResult OnGet()
+
+        public void OnGet()
         {
-            return Page();
+            Options = new SelectList(_context.Team, nameof(Team.ID), nameof(Team.Name));
         }
 
         [BindProperty]

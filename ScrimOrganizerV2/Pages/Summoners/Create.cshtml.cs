@@ -19,7 +19,7 @@ namespace ScrimOrganizerV2.Pages.Summoners
         private readonly ScrimOrganizerV2.Data.ApplicationDbContext _context;
         private readonly IHttpClientFactory _clientFactory;
         //Husk at opdater API nøglen hvis programmet ikke virker
-        private string apikey = "RGAPI-afbe7439-32a9-48af-bff9-58d25dc85c86";
+        private string apikey = "RGAPI-e849876e-20c3-41b7-84c2-7752a7821690";
         private string baseUrl = "https://euw1.api.riotgames.com/lol/";
         public CreateModel(ScrimOrganizerV2.Data.ApplicationDbContext context, IHttpClientFactory clientFactory)
         {
