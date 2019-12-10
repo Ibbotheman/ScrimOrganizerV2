@@ -64,8 +64,7 @@ namespace ScrimOrganizerV2.Pages.Teams
                 {
                     throw;
                 }
-            }
-
+            }            
             return RedirectToPage("./Index");
         }
 

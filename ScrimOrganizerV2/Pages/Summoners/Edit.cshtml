@@ -1,0 +1,65 @@
+﻿@page
+@model ScrimOrganizerV2.Pages.Summoners.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>Summoner</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Summoner.profileIconId" class="control-label"></label>
+                <input asp-for="Summoner.profileIconId" class="form-control" />
+                <span asp-validation-for="Summoner.profileIconId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Summoner.name" class="control-label"></label>
+                <input asp-for="Summoner.name" class="form-control" />
+                <span asp-validation-for="Summoner.name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Summoner.puuid" class="control-label"></label>
+                <input asp-for="Summoner.puuid" class="form-control" />
+                <span asp-validation-for="Summoner.puuid" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Summoner.summonerLevel" class="control-label"></label>
+                <input asp-for="Summoner.summonerLevel" class="form-control" />
+                <span asp-validation-for="Summoner.summonerLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Summoner.accountId" class="control-label"></label>
+                <input asp-for="Summoner.accountId" class="form-control" />
+                <span asp-validation-for="Summoner.accountId" class="text-danger"></span>
+            </div>
+            <input type="hidden" asp-for="Summoner.id" />
+            <div class="form-group">
+                <label asp-for="Summoner.revisionDate" class="control-label"></label>
+                <input asp-for="Summoner.revisionDate" class="form-control" />
+                <span asp-validation-for="Summoner.revisionDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Summoner.Role" class="control-label"></label>
+                <input asp-for="Summoner.Role" class="form-control" />
+                <span asp-validation-for="Summoner.Role" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

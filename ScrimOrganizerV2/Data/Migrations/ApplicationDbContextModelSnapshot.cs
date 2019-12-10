@@ -219,6 +219,60 @@ namespace ScrimOrganizerV2.Data.Migrations
                     b.ToTable("AspNetUserTokens");
                 });
 
+            modelBuilder.Entity("ScrimOrganizerV2.Models.MyTeam", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("ID");
+
+                    b.ToTable("MyTeam");
+                });
+
+            modelBuilder.Entity("ScrimOrganizerV2.Models.Summoner", b =>
+                {
+                    b.Property<string>("id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Role")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TeamID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("accountId")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("name")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("profileIconId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("puuid")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<long>("revisionDate")
+                        .HasColumnType("bigint");
+
+                    b.Property<int>("summonerLevel")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("TeamID");
+
+                    b.ToTable("Summoner");
+                });
+
             modelBuilder.Entity("ScrimOrganizerV2.Models.Team", b =>
                 {
                     b.Property<int>("ID")
@@ -232,6 +286,24 @@ namespace ScrimOrganizerV2.Data.Migrations
                     b.HasKey("ID");
 
                     b.ToTable("Team");
+                });
+
+            modelBuilder.Entity("ScrimOrganizerV2.Models.VersusTeam", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Team1ID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Team2ID")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("VersusTeam");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -281,6 +353,15 @@ namespace ScrimOrganizerV2.Data.Migrations
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("ScrimOrganizerV2.Models.Summoner", b =>
+                {
+                    b.HasOne("ScrimOrganizerV2.Models.Team", "Team")
+                        .WithMany("Summoners")
+                        .HasForeignKey("TeamID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

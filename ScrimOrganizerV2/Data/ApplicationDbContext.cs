@@ -14,5 +14,16 @@ namespace ScrimOrganizerV2.Data
         {
         }
         public DbSet<ScrimOrganizerV2.Models.Team> Team { get; set; }
+        public DbSet<ScrimOrganizerV2.Models.MyTeam> MyTeam { get; set; }
+        public DbSet<ScrimOrganizerV2.Models.Summoner> Summoner { get; set; }
+        public DbSet<ScrimOrganizerV2.Models.VersusTeam> VersusTeam { get; set; }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            builder.Entity<Team>()
+                .HasMany(a => a.Summoners)
+                .WithOne(b => b.Team)
+                .OnDelete(DeleteBehavior.Cascade);            
+        }
     }
 }

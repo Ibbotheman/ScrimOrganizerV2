@@ -9,5 +9,6 @@ namespace ScrimOrganizerV2.Models
     {
         public int ID { get; set; }
         public string Name { get; set; }
+        public ICollection<Summoner> Summoners { get; set; }        
     }
 }

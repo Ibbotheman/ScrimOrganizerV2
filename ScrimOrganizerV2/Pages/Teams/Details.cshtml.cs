@@ -27,14 +27,16 @@ namespace ScrimOrganizerV2.Pages.Teams
             {
                 return NotFound();
             }
-
-            Team = await _context.Team.FirstOrDefaultAsync(m => m.ID == id);
+            
+            Team = await _context.Team.Include(team => team.Summoners).FirstOrDefaultAsync(m => m.ID == id);
 
             if (Team == null)
             {
                 return NotFound();
             }
             return Page();
+
+            
         }
     }
 }
